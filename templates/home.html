@@ -10,11 +10,21 @@
     {% include 'nav.html' %}
     <div class="container"> 
     <h1 class="text-center">Career page</h1>
-    <img class="img-fluid" src="static/banner.jpg">
+    <img class="img-fluid" src="static/banner.jpg" alt="banner">
     <h1 class="text-center mt-2">About Us</h1>
-    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Laoreet suspendisse interdum consectetur libero. Ipsum consequat nisl vel pretium lectus quam id leo. Molestie nunc non blandit massa. Ullamcorper sit amet risus nullam eget felis eget nunc. Vel facilisis volutpat est velit. Nisl tincidunt eget nullam non nisi est sit amet facilisis. Lectus nulla at volutpat diam. Enim diam vulputate ut pharetra sit. </p>
+    <div class="row" style="margin-bottom: 16px;">
+    <div class="col-md-6">
+      <p class="lead">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Laoreet suspendisse interdum consectetur libero. Ipsum consequat nisl vel pretium lectus quam id leo. Molestie nunc non blandit massa. Ullamcorper sit amet risus nullam eget felis eget nunc. Vel facilisis volutpat est velit. Nisl tincidunt eget nullam non nisi est sit amet facilisis. Lectus nulla at volutpat diam. Enim diam vulputate ut pharetra sit. 
+    </p>
+    </div>
+      <div class=" d-none d-md-block col-md-6">
+      <img src="/static/people.jpg" style="height: 320px; border:4px;">
+        </div>
+      </div>
+    <div>
     <h2 class="text-center mt-2 mb-4">Open Positons</h2>
-<div>
+    </div>
       <div>
       {% for job in jobs %}
         {% include 'jobitem.html' %}
@@ -22,8 +32,9 @@
       </div>
     </div>
     <div class="text-center">
-      <button class="btn btn-primary btn-lg">Contact Us</button>
+      <a href="mailto:dmg89807@gmail.com?subject=Question%20About%20Job%20Openings&body=My%20Name%3A%20%3CYour%20name%3E%0D%0A%0D%0AMy%20Question%3A%20%3CYour%20Question%20here%3E" class="btn btn-primary btn-lg">Contact Us</a>
     </div>
+    {% include 'footer.html' %}
   </body>
   
 </html>
